@@ -1,0 +1,59 @@
+R version 4.6.0 (2026-04-24)
+Platform: aarch64-apple-darwin23
+Running under: macOS 27.2
+
+Matrix products: default
+BLAS:   /Library/Frameworks/R.framework/Versions/4.6/Resources/lib/libRblas.0.dylib 
+LAPACK: /Library/Frameworks/R.framework/Versions/4.6/Resources/lib/libRlapack.dylib;  LAPACK version 3.12.1
+
+locale:
+[1] en_GB.UTF-8/en_GB.UTF-8/en_GB.UTF-8/C/en_GB.UTF-8/en_GB.UTF-8
+
+time zone: Europe/London
+tzcode source: internal
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+loaded via a namespace (and not attached):
+[1] compiler_4.6.0
+
+List of 5
+ $ config   :List of 6
+  ..$ beta0       : num 1.06
+  ..$ min_events  : num 3
+  ..$ min_ratio   : num 3
+  ..$ anchor_event: chr "2000"
+  ..$ n_boot      : num 2000
+  ..$ seasons     : chr "2026"
+ $ data     :List of 5
+  ..$ rows_in_csv              : int 41712
+  ..$ rows_used                : int 17446
+  ..$ athlete_seasons          : int 3993
+  ..$ athletes                 : int 3993
+  ..$ events_per_athlete_median: num 4
+ $ overall  :List of 6
+  ..$ median_slope      : num 1.07
+  ..$ sd_slope          : num 0.0341
+  ..$ mean              :List of 3
+  .. ..$ est: num 1.07
+  .. ..$ lo : num 1.07
+  .. ..$ hi : num 1.07
+  ..$ pooled            :List of 3
+  .. ..$ est: num 1.07
+  .. ..$ lo : num 1.07
+  .. ..$ hi : num 1.07
+  ..$ beta0_in_pooled_ci: logi FALSE
+  ..$ share_below_beta0 : num 0.444
+ $ curvature:List of 6
+  ..$ exponent_at_2km   : num 1.07
+  ..$ exponent_at_2km_lo: num 1.07
+  ..$ exponent_at_2km_hi: num 1.07
+  ..$ curvature         : num -0.00723
+  ..$ curvature_lo      : num -0.0081
+  ..$ curvature_hi      : num -0.00639
+ $ effort   :List of 4
+  ..$ resid_sd_median  : num 0.0182
+  ..$ resid_sd_p90     : num 0.0539
+  ..$ resid_sd_p99     : num 0.129
+  ..$ residual_skewness: num 1.41

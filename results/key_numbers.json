@@ -1,0 +1,47 @@
+{
+  "config": {
+    "beta0": 1.064,
+    "min_events": 3,
+    "min_ratio": 3,
+    "anchor_event": "2000",
+    "n_boot": 2000,
+    "seasons": "2026"
+  },
+  "data": {
+    "rows_in_csv": 41712,
+    "rows_used": 17446,
+    "athlete_seasons": 3993,
+    "athletes": 3993,
+    "events_per_athlete_median": 4
+  },
+  "overall": {
+    "median_slope": 1.067209408,
+    "sd_slope": 0.03406789283,
+    "mean": {
+      "est": 1.067121842,
+      "lo": 1.06605757,
+      "hi": 1.068116165
+    },
+    "pooled": {
+      "est": 1.067172511,
+      "lo": 1.066173147,
+      "hi": 1.068159801
+    },
+    "beta0_in_pooled_ci": false,
+    "share_below_beta0": 0.4437766091
+  },
+  "curvature": {
+    "exponent_at_2km": 1.070847864,
+    "exponent_at_2km_lo": 1.069539196,
+    "exponent_at_2km_hi": 1.072089904,
+    "curvature": -0.007234725348,
+    "curvature_lo": -0.008096102281,
+    "curvature_hi": -0.006388879435
+  },
+  "effort": {
+    "resid_sd_median": 0.01817879431,
+    "resid_sd_p90": 0.05392444894,
+    "resid_sd_p99": 0.1289308932,
+    "residual_skewness": 1.409651493
+  }
+}

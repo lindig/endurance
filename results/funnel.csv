@@ -1,0 +1,8 @@
+"step","rows","athlete_seasons"
+"rows in CSV",41712,18985
+"rows with an athlete id",38435,18985
+"verified (individual) results",38103,18903
+"RowErg (static) only",38103,18903
+"valid time and distance",38103,18903
+"one result per athlete-season-event",38100,18903
+">= 3 events and distance ratio >= 3",17446,3993
