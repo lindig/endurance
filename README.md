@@ -14,12 +14,12 @@ only) and a report (Typst) that reads the results files directly.
 
 The idea to validate a power law comes from the paper below which compares a
 power law against another popular method to characterize human endurance: the
-_Critical Power Model_. In rowing, a third model is [Paul's
-Law])(https://github.com/lindig/pauls-law/) which I had investigated before.
+_Critical Power Model_. In rowing, a third model is 
+[Paul's Law](https://github.com/lindig/pauls-law/), which I had investigated before.
 
 > Drake, J.P., Finke, A. & Ferguson, _R.A. Modelling human endurance:
 > power laws vs critical power_. Eur J Appl Physiol 124, 507–526 (2024).
-> [https://doi.org/10.1007/s00421-023-05274-5]([https://doi.org/10.1007/s00421-023-05274-5])
+> [https://doi.org/10.1007/s00421-023-05274-5](https://doi.org/10.1007/s00421-023-05274-5)
 
 ## Key findings
 
