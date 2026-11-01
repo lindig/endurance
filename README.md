@@ -1,12 +1,25 @@
 # Does erg performance follow a 1.064 power law?
 
-An empirical test, using verified results from the public [Concept2 rankings](https://log.concept2.com/rankings), of the hypothesis that for one athlete in one season, time on the RowErg grows with distance as
+An empirical test, using verified results from the public [Concept2
+rankings](https://log.concept2.com/rankings), of the hypothesis that for one
+athlete in one season, time on the RowErg grows with distance as
 
 $$t \propto d^{\,1.064}$$
 
 Equivalently, average pace scales as $d^{0.064}$ and average power as $d^{-0.192}$.
 
-The analysis covers season 2026, both sexes and all age groups, and is built as a small pipeline: a cached scraper (R), an analysis script (R, base packages only) and a report (Typst) that reads the results files directly.
+The analysis covers season 2026, both sexes and all age groups, and is built as
+a small pipeline: a cached scraper (R), an analysis script (R, base packages
+only) and a report (Typst) that reads the results files directly.
+
+The idea to validate a power law comes from the paper below which compares a
+power law against another popular method to characterize human endurance: the
+_Critical Power Model_. In rowing, a third model is [Paul's
+Law])(https://github.com/lindig/pauls-law/) which I had investigated before.
+
+> Drake, J.P., Finke, A. & Ferguson, _R.A. Modelling human endurance:
+> power laws vs critical power_. Eur J Appl Physiol 124, 507–526 (2024).
+> [https://doi.org/10.1007/s00421-023-05274-5]([https://doi.org/10.1007/s00421-023-05274-5])
 
 ## Key findings
 
@@ -32,9 +45,10 @@ The full write-up (with the same tables and figures) is `report.typ`; compile it
 
 For athlete-season $i$ with results $j$:
 
-$$\ln t_{ij} = a_i + b\,\ln\!\left(\frac{d_{ij}}{2000\ \mathrm{m}}\right) + \varepsilon_{ij}$$
+$$\ln t_{ij} = a_i + b\ln\left(\frac{d_{ij}}{2000\ \mathrm{m}}\right) + \varepsilon_{ij}$$
 
-and the test is $b = 1.064$. Timed events (4, 30 and 60 minutes) enter as the pair (fixed time, distance rowed); distance events as (nominal distance, time).
+and the test is $b = 1.064$. Timed events (4, 30 and 60 minutes) enter as the
+pair (fixed time, distance rowed); distance events as (nominal distance, time).
 
 To look for departures from a straight line a quadratic term is added, with $x = \ln(d/2000)$:
 
