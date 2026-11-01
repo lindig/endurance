@@ -45,14 +45,14 @@ The full write-up (with the same tables and figures) is `report.typ`; compile it
 
 For athlete-season $i$ with results $j$:
 
-$$\ln t_{ij} = a_i + b\ln\left(\frac{d_{ij}}{2000\ \mathrm{m}}\right) + \varepsilon_{ij}$$
+$$\ln t_{ij} = a_i + b \ln\left(\frac{d_{ij}}{2000\ \mathrm{m}}\right) + \varepsilon_{ij}$$
 
 and the test is $b = 1.064$. Timed events (4, 30 and 60 minutes) enter as the
 pair (fixed time, distance rowed); distance events as (nominal distance, time).
 
 To look for departures from a straight line a quadratic term is added, with $x = \ln(d/2000)$:
 
-$$\ln t_{ij} = a_i + b\,x_{ij} + c\,x_{ij}^2 + \varepsilon_{ij}$$
+$$\ln t_{ij} = a_i + b x_{ij} + c x_{ij}^2 + \varepsilon_{ij}$$
 
 Then $b$ is the local exponent at 2 km and $2c$ is how quickly the local exponent changes with $\ln d$.
 
