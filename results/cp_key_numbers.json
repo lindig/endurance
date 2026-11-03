@@ -1,0 +1,36 @@
+{
+  "config": {
+    "beta0": 1.064,
+    "pp_c500": 5,
+    "cp_const": 2.8,
+    "cp_window_min": 2,
+    "cp_window_max": 20,
+    "n_boot": 1000,
+    "beta_folds": 10,
+    "min_events": 3,
+    "min_ratio": 3,
+    "pace_bins": 8,
+    "seasons": "2026"
+  },
+  "data": {
+    "athlete_seasons": 3993,
+    "athletes": 3993,
+    "results": 17446,
+    "predictions": 17446,
+    "predictions_main": 17230,
+    "predictions_best": 8901,
+    "predictions_single": 9803,
+    "share_interpolation": 0.5491584446,
+    "share_extrap_short": 0.2190946024,
+    "share_extrap_long": 0.231746953,
+    "cp_boundary_share": 0.03370400092
+  },
+  "paul_shape": {
+    "const_c500": 5.449379349,
+    "sse_const": 11.00570935,
+    "prop_k": 0.04879059808,
+    "beta_prop": 1.070389954,
+    "sse_prop": 149.2759154,
+    "n_bins": 8
+  }
+}
